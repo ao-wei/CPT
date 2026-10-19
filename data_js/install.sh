@@ -1,0 +1,1 @@
+uv add py-data-juicer[generic,nlp]
