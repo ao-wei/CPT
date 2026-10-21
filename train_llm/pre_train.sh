@@ -1,0 +1,1 @@
+deepspeed --num_gpus 2 pre_train.py

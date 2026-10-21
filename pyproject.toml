@@ -3,7 +3,9 @@ name = "cpt"
 version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = [
+    "datasets>=5.1.0",
     "datasketch>=2.0.0",
+    "deepspeed>=0.19.7",
     "dotenv>=0.9.9",
     "httpx>=0.28.1",
     "jieba>=0.42.1",
