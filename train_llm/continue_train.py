@@ -50,6 +50,11 @@ tokenized_datasets = raw_datasets.map(
     tokenize, batched=True, num_proc=16, remove_columns=raw_datasets["train"].column_names
 )
 
+print("tokenize dataset info")
+print(tokenized_datasets)
+data_collator = transformers.DataCollatorForLanguageModeling(tokenizer, mlm=False)
+
+
 # 训练参数 
 args = transformers.TrainingArguments(
     output_dir="saved/continue_pretrain",
